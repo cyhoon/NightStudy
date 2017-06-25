@@ -1,0 +1,171 @@
+@charset "utf-8";
+
+@font-face { font-family: 'bmy'; src: url(font/BMYEONSUNG.ttf) format('truetype');}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+html{
+    font-size: 62.5%;
+    overflow-y: scroll;
+}
+body, input, select, textarea, button{
+    font-size: 1.4rem;
+    color: #444;
+    font-family: 'bmy';
+    letter-spacing: -0.05em;
+    line-height: 1;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-size: 100%;
+    font-weight: normal;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+table{
+    width: 100%;
+    table-layout: fixed;
+    word-break: break-all;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img, fieldset, hr{
+    border: none;
+}
+
+ul,li{
+    list-style: none;
+}
+
+address, em{
+    font-style: normal;
+}
+
+img, video, canvas{
+    height: auto;
+}
+
+[type='text'], [type='password'], [type='email'], select, textarea{
+    padding: 0.5em;
+    border: 1px solid #ccc;
+}
+
+body{
+    background-color: #f8b141;
+    margin: 0;
+}
+
+.blind{
+    display: none;
+}
+
+/* nav */
+.nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav a{
+    margin-top: 10rem;
+    margin-left: 50px;
+    font-size: 1.4em;
+    font-weight: lighter;
+    transition: all .3s linear;
+}
+
+.nav a:hover{
+    transform: rotateX(45deg);
+    transform-origin : 0 100% 0;
+    transition: all .3s linear;
+}
+
+.layout{
+    width: 1020px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    margin-top: 20rem;
+}
+
+.title h1{
+    perspective: 200;
+    text-align: center;
+    font-size: 8rem;
+    animation: cake 3s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes cake{
+/*
+    from{ font-size: 5rem; }
+    to{ font-size: 8rem; }
+*/
+/*
+    from{ transform: rotateY(-45deg); }
+    to{ transform: rotateY(90deg); }
+*/
+    from{
+        transform: scale(0.5);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
+
+
+.title span{
+    display: block;
+    width: 25%;
+    margin: 0 auto;
+    height: 3px;
+    background-color: rgba(255,255,255,0.5);
+    margin-top: 5rem;
+}
+
+.border{
+    margin : 0 auto;
+    margin-top: 10rem;
+}
+
+.border button{
+    padding: 4rem;
+    padding-bottom: 60px;
+    background-color: #ffd156;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 30px;
+    border: none;
+    width: 450px;
+    height: 20px;
+    margin-bottom: 20rem;
+    letter-spacing: 0.05em;
+    transition: all .3s linear;
+}
+
+.border button:hover{
+    transform: scale(1.2);
+    background-color: rgba(240,191,60,0.5);
+    transition: all .3s linear;
+    box-shadow: 0 0 5px #f0a23c;
+}
+
+.border button:focus{
+    outline: 0;
+}

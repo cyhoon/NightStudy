@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+/* reset */
+@font-face { font-family: 'bmy'; src: url(font/BMYEONSUNG.ttf) format('truetype');}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-y: scroll;
+}
+
+body, input, select, textarea, button{
+    font-size: 1.4rem;
+    color: #444;
+    font-family: 'bmy';
+    letter-spacing: -0.05em;
+    line-height: 1;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-size: 100%;
+    font-weight: normal;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+table{
+    width: 100%;
+    table-layout: fixed;
+    word-break: break-all;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img, fieldset, hr{
+    border: none;
+}
+
+ul,li{
+    list-style: none;
+}
+
+address, em{
+    font-style: normal;
+}
+
+img, video, canvas{
+    height: auto;
+}
+
+[type="text"], [type="password"], [type="email"], select, textarea{
+    padding: 0.5em;
+    border: 1px solid #ccc;
+}
+
+body{
+    background-color: #f8b141;
+    margin: 0;
+}
+
+.blind{
+    display: none;
+}
+
+.nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav a{
+    margin-top: 10rem;
+    margin-left: 50px;
+    font-size: 1.4em;
+    font-weight: lighter;
+    transition: all .3s linear;
+}
+
+.nav a:hover{
+    transform: rotateX(45deg);
+    transform-origin: 0 100% 0;
+    transition: all .3s linear;
+}
+
+.layout{
+    width: 1020px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    margin-top: 15rem;
+}
+
+.title h1{
+    perspective: 200;
+    text-align: center;
+    font-size: 8rem;
+}
+
+.title span{
+    display: block;
+    width: 25%;
+    margin: 0 auto;
+    height: 3px;
+    background-color: rgba(255,255,255,0.5);
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+}
+
+.form{
+    margin: 0 auto;
+}
+
+.form input:focus{
+    outline: 0;
+}
+
+.form [type='text'],[type='password'],[type='submit']{
+    display: block;
+    padding: 1.2rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 40rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 1.6em;
+    background-color: #ffd156;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    transition: all .3s linear;
+}
+
+.form [type='text']:focus, [type='password']:focus{
+    box-shadow: 0 0 10px #eef03c;
+    transform: scale(1.2);
+}
+
+.form [type='submit']:hover{
+    box-shadow: 0 0 10px #eef03c;
+    transform: scale(1.2);
+}

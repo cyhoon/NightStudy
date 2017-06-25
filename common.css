@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+html{
+    font-size: 62.5%;
+    overflow-y: scroll;
+}
+body, input, select, textarea, button{
+    font-size: 1.4rem;
+    color: #444;
+    font-family: 'bmy';
+    letter-spacing: -0.05em;
+    line-height: 1;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-size: 100%;
+    font-weight: normal;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+table{
+    width: 100%;
+    table-layout: fixed;
+    word-break: break-all;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img, fieldset, hr{
+    border: none;
+}
+
+ul,li{
+    list-style: none;
+}
+
+address, em{
+    font-style: normal;
+}
+
+img, video, canvas{
+    height: auto;
+}
+
+[type='text'], [type='password'], [type='email'], select,
+textarea{
+    padding: 0.5em;
+    border: 1px solid #ccc;
+}
+
+@font-face { font-family: 'bmy'; src: url(font/BMYEONSUNG.ttf) format('truetype');}
+
+body{
+    background-color: #f8b141;
+    margin: 0;
+}
+
+#study{
+/* position: relative;*/
+}
+
+.blind{
+    position: absolute;
+    display: none;
+}
+
+.layout{
+    position: relative;
+    width: 1040px;
+    margin: 0 auto;
+}
+
+.title{
+    margin-top: 250px;
+}
+
+.title h1{
+    text-align: center;
+    font-size: 8rem;
+}
+
+.title span:nth-child(2){
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 4rem;
+    width: 25%;
+    height: 0.3em;
+    background-color: rgba(255,255,255,0.5);
+    position: relative;
+    margin-bottom: 120px;;
+}
+
+.border{
+    width: 450px;
+    margin: 0 auto;
+    
+}
+.border button{
+    display: inline-block;
+    padding: 3rem;
+    width: 450px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffd156;
+    font-size: 3rem;
+    font-weight: 30px;
+    transition: all .3s linear;
+}
+
+.border button:hover{
+    background-color: rgba(240,191,60,0.5);
+    transition: all .3s linear;
+}
